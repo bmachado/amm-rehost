@@ -56,13 +56,9 @@ Click Create Project, fill in the fields, and click Create:
 * Display Name: `Coolstore Monolith - Dev`
 * Description: _leave this field empty_
 
-{% hint style="info" %}
 NOTE: Replace \[your-username\] with your login in openshift. \[your-username\] before coolstore-dev is required since all students are using the same openshift cluster and it doesn't allow to have more than one project with the same project name.
-{% endhint %}
 
-{% hint style="info" %}
 NOTE: YOU MUST USE `coolstore-dev` AS THE PROJECT NAME, as this name is referenced later on and you will experience failures if you do not name it `coolstore-dev`!
-{% endhint %}
 
 ![OpenShift Console](https://lh4.googleusercontent.com/2XYgas85vGlCgOi9RRHnpHwSddE6g5q-a1PxxhxHZHo8Ipt0B8iDK3F5xs8x8iVXOsvRBbRDCl-OvtNAFGNN2M0IKrbjN11O5y2mJE8t1nfCk_tsP4W863we1gCueBanbJFBR3hl)
 

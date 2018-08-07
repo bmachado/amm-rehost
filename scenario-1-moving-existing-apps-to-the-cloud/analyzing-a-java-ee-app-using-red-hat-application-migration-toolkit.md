@@ -38,9 +38,7 @@ The RHAMT CLI has a number of options to control how it runs. Click on the below
   --packages com.redhat weblogic
 ```
 
-{% hint style="info" %}
 Note the use of the --source and --target options. This allows you to target specific migration paths supported by RHMAT. Other migration paths include IBM® WebSphere® Application Server and JBoss EAP 5/6/7.
-{% endhint %}
 
 Wait for it to complete before continuing!. You should see Report created in:
 

@@ -16,9 +16,7 @@ On this page you can see the pipeline definition. Click **Actions → Edit** to 
 
 In the pipeline definition editor, add a new stage to the pipeline, just before the Deploy to PROD step:
 
-{% hint style="info" %}
 You will need to copy and paste the below code into the right place as shown in the below image.
-{% endhint %}
 
 ```yaml
 stage 'Approve Go Live'

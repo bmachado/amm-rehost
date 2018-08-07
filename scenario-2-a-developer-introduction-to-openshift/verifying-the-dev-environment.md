@@ -4,13 +4,9 @@
 
 You can review the above resources in the OpenShift Web Console or using the oc get or oc describe commands \(oc describe gives more detailed info\):
 
-{% hint style="info" %}
 You can use short synonyms for long words, like bc instead of buildconfig, and is for imagestream, dc for deploymentconfig, svc for service, etc.
-{% endhint %}
 
-{% hint style="info" %}
 Don't worry about reading and understanding the output of oc describe. Just make sure the command doesn't report errors!
-{% endhint %}
 
 Run these commands to inspect the elements:
 

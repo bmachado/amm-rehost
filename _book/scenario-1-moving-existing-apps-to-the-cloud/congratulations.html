@@ -1,0 +1,839 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Deploy the monolith to OpenShift · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="congratulations-1-1.html" />
+    
+    
+    <link rel="prev" href="configuring-jboss-developer-studio-with-the-application.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    SCENARIO 1: Moving existing apps to the cloud
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="virtual-machine.html">
+            
+                <a href="virtual-machine.html">
+            
+                    
+                    Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="analyzing-a-java-ee-app-using-red-hat-application-migration-toolkit.html">
+            
+                <a href="analyzing-a-java-ee-app-using-red-hat-application-migration-toolkit.html">
+            
+                    
+                    Analyzing a Java EE app using Red Hat Application Migration Toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="untitled.html">
+            
+                <a href="untitled.html">
+            
+                    
+                    Using JBoss Developer Studio and Eclipse Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="migrate-application-startup-code.html">
+            
+                <a href="migrate-application-startup-code.html">
+            
+                    
+                    Migrate Application Startup Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="review-rhamt-issues.html">
+            
+                <a href="review-rhamt-issues.html">
+            
+                    
+                    Review RHAMT Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="migrate-logging.html">
+            
+                <a href="migrate-logging.html">
+            
+                    
+                    Migrate Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="test-the-build.html">
+            
+                <a href="test-the-build.html">
+            
+                    
+                    Test the build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="migrate-jms-topic.html">
+            
+                <a href="migrate-jms-topic.html">
+            
+                    
+                    Migrate JMS Topic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="test-the-build-1.html">
+            
+                <a href="test-the-build-1.html">
+            
+                    
+                    Test the build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="re-run-the-rhamt-report.html">
+            
+                <a href="re-run-the-rhamt-report.html">
+            
+                    
+                    Re-Run the RHAMT report
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="migrate-and-run-the-project.html">
+            
+                <a href="migrate-and-run-the-project.html">
+            
+                    
+                    Migrate and run the project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="the-maven-wildfly-plugin.html">
+            
+                <a href="the-maven-wildfly-plugin.html">
+            
+                    
+                    The maven-wildfly-plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="configuring-the-jboss-eap.html">
+            
+                <a href="configuring-the-jboss-eap.html">
+            
+                    
+                    Configuring the JBoss EAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="deploying-the-application.html">
+            
+                <a href="deploying-the-application.html">
+            
+                    
+                    Deploying the application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="test-the-application.html">
+            
+                <a href="test-the-application.html">
+            
+                    
+                    Test the application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="configuring-jboss-developer-studio-with-the-application.html">
+            
+                <a href="configuring-jboss-developer-studio-with-the-application.html">
+            
+                    
+                    Configuring JBoss Developer Studio with the application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.17" data-path="congratulations.html">
+            
+                <a href="congratulations.html">
+            
+                    
+                    Deploy the monolith to OpenShift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="congratulations-1-1.html">
+            
+                <a href="congratulations-1-1.html">
+            
+                    
+                    Congratulations!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../scenario-2-a-developer-introduction-to-openshift/">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/">
+            
+                    
+                    SCENARIO 2: A Developer Introduction to OpenShift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../scenario-2-a-developer-introduction-to-openshift/setup-for-exercise.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/setup-for-exercise.html">
+            
+                    
+                    Setup for Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../scenario-2-a-developer-introduction-to-openshift/verifying-the-dev-environment.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/verifying-the-dev-environment.html">
+            
+                    
+                    Verifying the Dev Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../scenario-2-a-developer-introduction-to-openshift/copy-files-from-container.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/copy-files-from-container.html">
+            
+                    
+                    Copy files from container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../scenario-2-a-developer-introduction-to-openshift/before-moving-on.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/before-moving-on.html">
+            
+                    
+                    Before moving on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files.html">
+            
+                    
+                    Live Synchronization of Project Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files-1/">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files-1/">
+            
+                    
+                    Live Synchronization of Project Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files-1/1.-turn-on-live-sync.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files-1/1.-turn-on-live-sync.html">
+            
+                    
+                    Turn on Live Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files-1/2.-make-a-change-to-the-ui.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/live-synchronization-of-project-files-1/2.-make-a-change-to-the-ui.html">
+            
+                    
+                    Make a change to the UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../scenario-2-a-developer-introduction-to-openshift/before-continuing.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/before-continuing.html">
+            
+                    
+                    Before continuing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../scenario-2-a-developer-introduction-to-openshift/deploying-the-production-environment.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/deploying-the-production-environment.html">
+            
+                    
+                    Deploying the Production Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../scenario-2-a-developer-introduction-to-openshift/create-the-production-environment.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/create-the-production-environment.html">
+            
+                    
+                    Create the production environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../scenario-2-a-developer-introduction-to-openshift/promoting-apps-across-environments-with-pipelines.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/promoting-apps-across-environments-with-pipelines.html">
+            
+                    
+                    Promoting Apps Across Environments with Pipelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../scenario-2-a-developer-introduction-to-openshift/congratulations.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/congratulations.html">
+            
+                    
+                    Congratulations!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../scenario-2-a-developer-introduction-to-openshift/adding-pipeline-approval-steps.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/adding-pipeline-approval-steps.html">
+            
+                    
+                    Adding Pipeline Approval Steps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../scenario-2-a-developer-introduction-to-openshift/congratulations-1.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/congratulations-1.html">
+            
+                    
+                    Congratulations!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../scenario-2-a-developer-introduction-to-openshift/summary.html">
+            
+                <a href="../scenario-2-a-developer-introduction-to-openshift/summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Deploy the monolith to OpenShift</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="deploy-the-monolith-to-openshift">Deploy the monolith to OpenShift</h1>
+<p>We now have a fully migrated application that we tested locally. Let&apos;s deploy it to OpenShift.</p>
+<ol>
+<li>Add a OpenShift profile</li>
+</ol>
+<p>Open the <code>pom.xml</code> file.</p>
+<p>At the <code>&lt;!-- TODO: Add OpenShift profile here --&gt;</code> we are going to add a the following configuration to the pom.xml</p>
+<pre><code class="lang-markup">&lt;profile&gt;
+  &lt;id&gt;openshift&lt;/id&gt;
+  &lt;build&gt;
+      &lt;plugins&gt;
+          &lt;plugin&gt;
+              &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;
+              &lt;version&gt;2.6&lt;/version&gt;
+              &lt;configuration&gt;
+                  &lt;webResources&gt;
+                      &lt;resource&gt;
+                          &lt;directory&gt;${basedir}/src/main/webapp/WEB-INF&lt;/directory&gt;
+                          &lt;filtering&gt;true&lt;/filtering&gt;
+                          &lt;targetPath&gt;WEB-INF&lt;/targetPath&gt;
+                      &lt;/resource&gt;
+                  &lt;/webResources&gt;
+                  &lt;outputDirectory&gt;deployments&lt;/outputDirectory&gt;
+                  &lt;warName&gt;ROOT&lt;/warName&gt;
+              &lt;/configuration&gt;
+          &lt;/plugin&gt;
+      &lt;/plugins&gt;
+  &lt;/build&gt;
+&lt;/profile&gt;
+</code></pre>
+<ol>
+<li>Create the OpenShift project</li>
+</ol>
+<p>First, open the OpenShift Console in the browser:</p>
+<p><code>https://master.[EVENT-NAME].openshiftworkshop.com</code></p>
+<p><img src="https://lh6.googleusercontent.com/adRMjMULPLSoIb1GcqdIhMmcTYURlU5AASF74_8YhhVgOu0t4FQXNhR4kE8Al6Rf_rRg844CO_Hkv_18hR2dvvh5cW17_iUbSd72NllEBl6tgIdFOFtWzyP5AjRYBqP4sludY70R" alt="OpenShift Console"></p>
+<p>Login using:</p>
+<ul>
+<li>Username: <code>user[YOUR-USER-NUMBER]</code></li>
+<li>Password: <code>openshift</code></li>
+</ul>
+<p>You will see the OpenShift landing page:</p>
+<p><img src="https://lh4.googleusercontent.com/zPgMUrk7SEe4siVLZiiAKBjzxIdZzJeFPlrmAgptLLejQkTifuIIXJ4s5pGac5bgThr_0wXYF12haCAQ_fIGhm6DCzbxgMjAeClr9YjA57BDCcRmYGl53ipFKGY1v_mFl2DmOo6M" alt="OpenShift Console"></p>
+<p>Click Create Project, fill in the fields, and click Create:</p>
+<ul>
+<li>Name: <code>coolstore-dev</code></li>
+<li>Display Name: <code>Coolstore Monolith - Dev</code></li>
+<li>Description: <em>leave this field empty</em></li>
+</ul>
+<p>NOTE: Replace [your-username] with your login in openshift. [your-username] before coolstore-dev is required since all students are using the same openshift cluster and it doesn&apos;t allow to have more than one project with the same project name.</p>
+<p>NOTE: YOU MUST USE <code>coolstore-dev</code> AS THE PROJECT NAME, as this name is referenced later on and you will experience failures if you do not name it <code>coolstore-dev</code>!</p>
+<p><img src="https://lh4.googleusercontent.com/2XYgas85vGlCgOi9RRHnpHwSddE6g5q-a1PxxhxHZHo8Ipt0B8iDK3F5xs8x8iVXOsvRBbRDCl-OvtNAFGNN2M0IKrbjN11O5y2mJE8t1nfCk_tsP4W863we1gCueBanbJFBR3hl" alt="OpenShift Console"></p>
+<p>Click on the name of the newly-created project:</p>
+<p><img src="https://lh3.googleusercontent.com/sKgjYzFDDKt7y_yEqGT-vjcgsCaWyZvu5OvMbvWUqPoicR2hfVL57nt-ARBBGqrA22Q5eBqNPVlI0jygpS6flWrbxXOUIaxkUgrFUJLru3VoNCEbwUtZ20KbA_Own3KellSv4JrP" alt="OpenShift Console"></p>
+<p>This will take you to the project overview. There&apos;s nothing there yet, but that&apos;s about to change.</p>
+<ol>
+<li>Deploy the monolith</li>
+</ol>
+<p>We&apos;ll use the CLI to deploy the components for our monolith. To deploy the monolith template using the CLI, execute the following commands:</p>
+<p>Firstly, you will need to open the terminal window and make a login into Openshift Container Platform. The web interface provides a ready to use oc command with the token needed.</p>
+<p><img src="https://lh6.googleusercontent.com/ka14YTWqsxGnbVNVc4x8f2-79Md4pppNCzTDaL0A0nrYHEQBBwz-v8L4_yiYW2r4yaWxXsfB9RhFXNc2gPw98llQgM42l4HCWlzOSKsljCvA2mE3iCrpN1wzmuGMbNUIiQXE1bnB" alt=""></p>
+<p>Just paste it in the terminal window:</p>
+<pre><code class="lang-bash">oc login https://master.[EVENT-NAME].openshiftworkshop.com --token=apslfkwikdk
+</code></pre>
+<p>Switch to the terminal window in project you created earlier:</p>
+<pre><code class="lang-bash">oc project coolstore-dev
+</code></pre>
+<p>And finally deploy template:</p>
+<pre><code class="lang-bash">oc new-app coolstore-monolith-binary-build
+</code></pre>
+<p>This will deploy both a PostgreSQL database and JBoss EAP, but it will not start a build for our application.</p>
+<p>Then open up the Monolith Overview page at</p>
+<p><code>https://master.[EVENT-NAME].openshiftworkshop.com/console/project/coolstore-dev/</code> and verify the monolith template items are created:</p>
+<p><img src="https://lh5.googleusercontent.com/a-nlzEUCDZ7NH1lgi7-eGl14_VE3q5Bxx15u0H3LK0tJJyZp6lYt0gNJKxiVUMc7PLGJigBnpaNw9c1TDjyXF-j6QhLV01xjg7Q3bnA4gGCgkzn7x5Q00zLQv1uFyowlt9woI5o4" alt="OpenShift Console"></p>
+<p>You can see the components being deployed on the Project Overview, but notice the No deployments for Coolstore. You have not yet deployed the container image built in previous steps, but you&apos;ll do that next.</p>
+<ol>
+<li>Deploy application using Binary build</li>
+</ol>
+<p>In this development project we have selected to use a process called binary builds, which means that we are going to build locally and just upload the artifact (e.g. the .war file). The binary deployment will speed up the build process significantly.</p>
+<p>First, build the project once more using the openshift Maven profile, which will create a suitable binary for use with OpenShift (this is not a container image yet, but just the .war file). We will do this with the oc command line.</p>
+<p>Build the project:</p>
+<p>Using JBoss Developer studio, right click in the pom.xml, navigate to <strong>Run As &#x2192; Maven build&#x2026;</strong>  </p>
+<p><img src="https://lh3.googleusercontent.com/YBzKnjhgFNHRAEVEWnnH_8gFv3XcGgmvT322FXSZHt_DXRA177MXC-6pIZvXOJleJ-UpWFuxcHRUtQqFm2GFp6I_7fO--f_kb9bvNrRZj5W2bVKQ74b-qHnokSQCakcCI1bLoOUd" alt=""></p>
+<p>Add clean package -Popenshift as the goals to this maven build</p>
+<p><img src="https://lh6.googleusercontent.com/KQoBMMUAzRBNwKFAol1dTxDDzZzSncsH2LphRnyXioL9QZJv3sSTEiohKoJAP09vnF-aX5tY4bZYy-bETlkRSCQY3tSv0r52fxgH69jSwps3BF3CgaMuT4sNsWG5fCdZPwoQme0v" alt=""></p>
+<p>You can also run the command below in the terminal window if you prefer</p>
+<pre><code class="lang-bash">mvn clean package -Popenshift
+</code></pre>
+<p>Wait for the build to finish and the <code>BUILD SUCCESS</code> message!</p>
+<p>Go to Openshift Explorer tab and add a new connection using its wizard:</p>
+<p><img src="https://lh5.googleusercontent.com/btYqANIenDwLElY9OX_Yz54pK0qyHIDVCDzMmJ2GhoneDT5Y7SJWhnLMgnlFd2kvUd4kAQN4lXNAF9qJ-ybNl_Tn_3kZbyu9muV_EgxrbzD3R0dEUyrJ8sRmdWspU5tmWMxSc9Qg" alt=""></p>
+<p>Enter the master node url provided by the instructor (<a href="about:blank" target="_blank">https://master.[EVENT-NAME].openshiftworkshop.com</a>), select Basic protocol and enter with your userN and password openshift.</p>
+<p><img src="https://lh4.googleusercontent.com/amAHzzCcVOpGB4_ffU2mgpYMBuBQG9PAnZDjNJwXoRW2aY0b9gCMOBXrrF0kf7QfWA5BUzuQo5CLCgHb45HI4fwD6uITERrWbQSZBhEu_Gr_EKqBG5HjNPZbx3An4yCppIfG0McQ" alt=""></p>
+<p>Accept the SSL certificate.</p>
+<p><img src="https://lh5.googleusercontent.com/CE3kXnGj8PDeqCpmxTBR0G8zugsdzC9eWDoMEW30E33mN8dIDDi9CFNbeF4MrTW1qp4sWd__axY4Wf4YmPhoJTS_UIPjI3SIAkzM4pxYwZXNnemVehrKDbfbk-DXXNK5zDQ0XgAE" alt=""></p>
+<p>Then click finish.</p>
+<p>You will see the Openshift connection in Openshift Explorer tab.</p>
+<p><img src="https://lh3.googleusercontent.com/dHj9xaCgij3OgtG4bGiWm8EWVzGPqltv6IiV9We1x-Am5TGP5tSQTBeAaj_FdzjuqKjmvZpVir_BSiDpZMkXVCjKuNTSD28Y-Bsso5Lc7slOm0GHnFI3HfVb4b6Z3x_So1cwa4vt" alt=""></p>
+<p>And finally, start the build process that will take the <code>.war</code> file and combine it with JBoss EAP and produce a Linux container image which will be automatically deployed into the project, thanks to the <em>DeploymentConfig</em> object created from the template.</p>
+<p>In terminal window, certify you are in the coolstore-dev project</p>
+<pre><code class="lang-bash">oc get project
+</code></pre>
+<p>Start the coolstore application build</p>
+<pre><code class="lang-bash">oc start-build coolstore --from-file=<span class="hljs-variable">${HOME}</span>/projects/monolith/deployments/ROOT.war
+</code></pre>
+<p><img src="https://lh6.googleusercontent.com/lMUUPe8HEefSL8W9LPk3d0k9t60Rn3arMYxeHEqCqKI7kxPOkfbZ6OjMU0neZsRiZaNqsygRFk0JiTnTubODqNFybqoiPYCn8fPbyNPW2Sdz_OYxhQUvYgUVYJtjXohxE_BKG4Wo" alt=""></p>
+<p>Check the OpenShift web console and you&apos;ll see the application being built:</p>
+<p><img src="https://lh5.googleusercontent.com/1oYV54VqF6du_BIU1-EM25RP0wAGobb7e_47NTz0EmsXAK7CFLyAbPkPe1QXVfpznwcaqso6_BWcId6djHX2IkVHmcz1j7n40AGqgFdqOp43ozEHL_8RN9uGpy5PuONohgWVcGQG" alt="OpenShift Console"></p>
+<p>You will also see the Openshift Explorer tab in JBoss Developer Studio updated.</p>
+<p><img src="https://lh4.googleusercontent.com/qZE8TGeqvWBrWqtGVjHtYr05GGHXHu6mUzZckVGCqBraslkgxESdHR5Jq2Bh1gi6UGFJJFP2yMyI-nhucFf8pYmXYrrfNc2o3inQLOXDWRkKAiISv-0J4FV16mpugOftiuZlxRhH" alt=""></p>
+<p>In terminal window, wait for the build and deploy to complete:</p>
+<pre><code class="lang-bash">oc rollout status -w dc/coolstore
+</code></pre>
+<p>This command will be used often to wait for deployments to complete. Be sure it returns success when you use it! You should eventually see replication controller &quot;coolstore-1&quot; successfully rolled out.</p>
+<p>If the above command reports <code>Error from server</code>(ServerTimeout) then simply re-run the command until it reports success!</p>
+<p>When it&apos;s done you should see the application deployed successfully with blue circles for the database and the monolith:</p>
+<p><img src="https://lh3.googleusercontent.com/qeJj3G-Ae_gato3Un3NYgz6n71cb05Cjr2px9cRzGwxfcUMJXKI_EWHzg82Dm9hbO_hFEqWYq3Lqq7vXwtZr0e1LCWjZqc9ZPlf3SjQBpZfQEQBlCkoSHWT1otezDLsPXqwQLozw" alt="OpenShift Console"></p>
+<p>Test the application by clicking on the Route link at</p>
+<p><code>http://www.coolstore-dev.[EVENT-NAME].openshiftworkshop.com</code> , which will open the same monolith Coolstore in your browser, this time running on OpenShift:</p>
+<p><img src="https://lh4.googleusercontent.com/l1yoAXLaHqQ9fj08CIipI1kZvmXrkqwltW0hwwDUk7gzLM42e0n8FjEKq4mDYlW5cvZsMJkZ8vBXlxM2P6dwLqrzG68yjj8ZuAHv9LuBS1e-f_qvdJwm9rOBFyFJyOQanLUnc8z2" alt="OpenShift Console"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="configuring-jboss-developer-studio-with-the-application.html" class="navigation navigation-prev " aria-label="Previous page: Configuring JBoss Developer Studio with the application">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="congratulations-1-1.html" class="navigation navigation-next " aria-label="Next page: Congratulations!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Deploy the monolith to OpenShift","level":"1.2.17","depth":2,"next":{"title":"Congratulations!","level":"1.2.18","depth":2,"path":"scenario-1-moving-existing-apps-to-the-cloud/congratulations-1-1.md","ref":"scenario-1-moving-existing-apps-to-the-cloud/congratulations-1-1.md","articles":[]},"previous":{"title":"Configuring JBoss Developer Studio with the application","level":"1.2.16","depth":2,"path":"scenario-1-moving-existing-apps-to-the-cloud/configuring-jboss-developer-studio-with-the-application.md","ref":"scenario-1-moving-existing-apps-to-the-cloud/configuring-jboss-developer-studio-with-the-application.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"scenario-1-moving-existing-apps-to-the-cloud/congratulations.md","mtime":"2018-08-07T20:24:27.222Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-07T20:25:08.870Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
