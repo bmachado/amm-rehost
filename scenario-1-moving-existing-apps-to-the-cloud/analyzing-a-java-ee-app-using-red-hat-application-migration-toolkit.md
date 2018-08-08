@@ -23,7 +23,7 @@ This is a minimal Java EE project which uses [JAX-RS](https://docs.oracle.com/ja
 
 When you later deploy the application, it will look like:
 
-![CoolStore Monolith](https://lh5.googleusercontent.com/-QevysQ26TiDsqIApIDl3889ersyTCQb4WtPbOqCnkMPhvDzTV6uyxMyOdb_J9s1d37VTBcAzgRcPr4skpOpxGPhulB6uw8aFYpdDYLB2sZ18e8SLj0mh8_xHXMA3uZmEI1Vj7dG)
+![CoolStore Monolith](../images/scenario1/image27.png)
 
 The RHAMT CLI has a number of options to control how it runs. Click on the below command to execute the RHAMT CLI and analyze the existing project:
 
