@@ -50,11 +50,11 @@ Wait for it to complete before continuing!. You should see Report created in:
 
 Next, open the following file `/home/developer/rhamt-reports/monolith/index.html` in your browser. You should see the landing page for the report:
 
-![Landing Page](https://lh5.googleusercontent.com/0CJojzmX8ynhPUnc9MlXo17q9NeXM7qFxEFmQGq5xSoUOI98bjO1vQF6BxR5vvQMfvMJX4I7UkspPVgF7QF2jIwRMkqWHvlaNSfaOZoUPoZYP2YtwfilNgWSNmOmdDfvLZTme2ZE)
+![Landing Page](../images/scenario1/image19.png)
 
 The main landing page of the report lists the applications that were processed. Each row contains a high-level overview of the story points, number of incidents, and technologies encountered in that application.Click on the **monolith** link to access details for the project:
 
-![Project Overview](https://lh6.googleusercontent.com/W83TxodJKLCkBR83zaj9iKbRQ9tFp6XrTQkE7z8sKZVg5S-eLOmpcUI7iV4ZWT7hgIm3riduYSphhvJfz5X3oFQWBgdPy_PenWpIM7_cJbSS8_YpFwXgyr6PlOJVGx0cgctSIpPr)
+![Project Overview](../images/scenario1/image52.png)
 
 Now that you have the RHAMT report available, let's get to work migrating the app!  
 
