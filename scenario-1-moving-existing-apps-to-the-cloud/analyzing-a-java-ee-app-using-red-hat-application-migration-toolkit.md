@@ -50,7 +50,10 @@ Wait for it to complete before continuing!. You should see Report created in:
 
 Next, open the following file `/home/developer/rhamt-reports/monolith/index.html` in your browser. You should see the landing page for the report:
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bef8bc274541f80fb743b4f77f8a1aa38dd21586
 ![Landing Page](../images/scenario1/image19.png)
 
 The main landing page of the report lists the applications that were processed. Each row contains a high-level overview of the story points, number of incidents, and technologies encountered in that application.Click on the **monolith** link to access details for the project:
