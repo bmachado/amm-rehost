@@ -4,11 +4,11 @@ Our application uses [JMS](https://en.wikipedia.org/wiki/Java_Message_Service) t
 
 Much of Weblogic's interfaces for EJB components like MDBs reside in Weblogic descriptor XML files. In project explorer, open `src/main/webapp/WEB-INF/weblogic-ejb-jar.xml` to see one of these descriptors.
 
-![](https://lh5.googleusercontent.com/M7q5fWLy1suvD4OqmRfhU1jxTZTZ-U6Ps17jEHKuC_dHMWxHh4SHjMCEfPuWroVjQuoKEkDK71EKR0FgKPFvU2ktfpaU8iuLjoRUa-V1cdrUHCeZuu-NJJsCHbWMA2Hl-IHJYr5y)
+![](../images/scenario1/image51.png)
 
 Another possibility to open weblogic-ejb-jar.xml is to use the ctrl+shift+r shortcut and fill the search with weblogic-ejb-jar name.
 
-![](https://lh4.googleusercontent.com/LCu_uRHHfNeQqvrwzcyW0VP70bhTWyjLA6wOnukPrgO3YJpytm_j-Vzx1kf5sS0LeUjNjOAku3vkGUbC-41C_Kxp44x0Is54UQXHBjjK0RcprQYrauA5xfbkXjret7irtAWd-RVA)
+![](../images/scenario1/image12.png)
 
 There are many different configuration possibilities for EJBs and MDBs in this file, but luckily our application only uses one of them, namely it configures `<trans-timeout-seconds>` to 30, which means that if a given transaction within an MDB operation takes too long to complete \(over 30 seconds\), then the transaction is rolled back and exceptions are thrown. This interface is Weblogic-specific so we'll need to find an equivalent in JBoss.  
 
@@ -22,11 +22,11 @@ From the RHAMT Issues report tab we will fix the remaining issues:
 * WebLogic InitialContextFactory - This is related to the above, essentially a Weblogic proprietary mechanism
 * WebLogic T3 JNDI binding - The way EJBs communicate in Weblogic is over T2, a proprietary implementation of Weblogic.
 
-![](https://lh6.googleusercontent.com/uCN5Inu6bJPFsMrLi1KOzSLJBtV12fUAGltJzlESWVJH2rJuRPYs5p0oUvnJKdhRnkfIcHkx_gUOtTb83V0lZXaGHFQY2muwuakmP4NYhM4DGcIVimGa1OTstveH30kBl3DI7reI)
+![](../images/scenario1/image9.png)
 
 The same remaining issues are listed in the Issue Explorer. Navigate on it until find them.
 
-![](https://lh6.googleusercontent.com/-eIalxNfW-3g3lIo1ccGTA9PK7X6KYksbtSlhiAkRpcKIO7a5hoZcFCATrJUy6JXuBgoQ_p3DSaPIRp4WUM-BH05e7gTXg97oCrAnpaiEYyeRohVqDBm5laTogR5pB9by7WGk2jS)
+![](../images/scenario1/image35.png)
 
 All of the above interfaces have equivalents in JBoss, however they are greatly simplified and overkill for our application which uses JBoss EAP's internal message queue implementation provided by [Apache ActiveMQ Artemis](https://activemq.apache.org/artemis/).
 
@@ -38,17 +38,17 @@ Select `weblogic-ejb-jar.xml` and press delete key or right click the file and c
 
 Also, in project explorer, remove `src/main/java/weblogic` folder
 
-![](https://lh5.googleusercontent.com/doyMOG9zR0BfLZds9S4S8aL_dPUWPl887mxu_TDoBRmo0ZMe-q0xD718BeypZeZSWdwKS7r4UVdJANDZuveZwKHk8MZ79UsNwfS30hUZYAiiDrCCrxTs5MZw0eNstzoc3Lhq2DHY)
+![](../images/scenario1/image63.png)
 
 Confirm the operation by clicking on ok button
 
-![](https://lh3.googleusercontent.com/QvimE5hVOdtevf4KKlZJgvatwBQJVIZrpX0qotLdAG51tNPZaTGUNVTfuNobfBREbGYt5ifcGORq1Nu6XomBd4gCrAcasJ0JjesmMiRlRLyrWufzGmvvo-luS71ODlsuvzLbP4O1)
+![](../images/scenario1/image24.png)
 
 3. Fix the code
 
 In Issue Explorer, double click in Call of JNDI lookup issue, it will open the associated source code line in _InventoryNotificationMDB_ class.
 
-![](https://lh5.googleusercontent.com/3o8KP04izZ0qE0zPow8uUNiK9JRcyIqp81n1E8pJO957GZ0uHFpL1kAkY3JGWiBuO11qm1jFgHUDidPmDr1LQICiSOn6ZnvB45GhUJa7n1PrbxA8Dzn7DmhssO9Fbce5eGkql25r)
+![](../images/scenario1/image11.png)
 
 As described in previous steps, you can check the Issue Details to get tips and review a knowledge base article before migrating.
 
