@@ -84,19 +84,19 @@ You can also login in the management web console and run the same SQL query from
 
 Choose the **Coolstore Monolith - Dev** in the projects menu.
 
-![](https://lh6.googleusercontent.com/GViWSHUTAPwIsULR1I8oPMIeXXiJa9FI8h8_I7ycwKkhm2qgKXpcyuclgklG7QlwK8u1MsQC6h5pN1QTyYp9eRRHcdQuwZHFfJeTqYl3AAiWJJbTJ3Xg999JnxUV1hXRK9ZglSeT)
+![](../images/scenario2/image17.png)
 
 Expands the **coolstore-postgresql**
 
-![](https://lh4.googleusercontent.com/xbKuOiWkyhZPU_VfLDv1RC7a4g6-v3u31GjbMkisZ-raXykc1KNap7OMQ08FdkBIUW-6zuIE7nLWFCxDXt9CaGPiM5f1pVVPrIXWuuQBUVqkEpV4xK-LKbND-kXIDB5MtOLKSDQt)
+![](../images/scenario2/image11.png)
 
 Click in the number of running pods
 
-![](https://lh6.googleusercontent.com/5xkCu83LkY7XRYE3zbfLTAfqxp3qop3dGyQ-Pl_g264OlXcvyVFfgimG-mF64Ev0-g0IipuAQpDXP48uqufFEo6rJDH60ksw01p1bRkPk0OBXqiHFjOMaPGYwcZgdv6b_y1Vj_tK)
+![](../images/scenario2/image4.png)
 
 Go to **terminal** tab menu
 
-![](https://lh4.googleusercontent.com/7vy4-qQUpz8946j3AE0rpy4z8QHHPd69wK6yzySkJY-IVJI_Zh2LmI5QBHdJqdeDqYR5xfaukiXucULTUKa0iI4Qr-OeUFGoHjbonw7W0G57y2ywzeZBxoJsg68PTyLl5kvgXwVB)
+![](../images/scenario2/image28.png)
 
 Run the same SQL Query command you executed previously:
 
@@ -106,11 +106,11 @@ psql -U $POSTGRESQL_USER $POSTGRESQL_DATABASE -c 'select name from PRODUCT_CATAL
 
 \*\*\*\*
 
-![](https://lh5.googleusercontent.com/O8RqZhUvmnvuemhmvdSC5IPKhmPY12N7KYioci4nHrwILMarP8OZUUGlvZ2uGTCaSzTpVZECoTsu4C3aYfQVPXsRtn4Jm0WZsGKICrO3NRNPyLXFsCvkABSZTABGKGwHh_k_nBaN)
+![](../images/scenario2/image46.png)
 
 Also, explore the Environment tab also available and see the same environment variables you’ve seen before.
 
-![](https://lh5.googleusercontent.com/t7FE0ybJXM4cfCr1GZTvhuU2Dr27CNgsAuTJ6eUMB2XW7_KoS9uJvsdlMzQM5BevuDNta2Jhazig23aUwV-JpDVkVGNBl3Bg6Mq03GtjJ8TuZnW00fYGAePdjnGWrdtipO1pemX1)
+![](../images/scenario2/image10.png)
 
 With our running project on OpenShift, in the next step we'll explore how you as a developer can work with the running app to make changes and debug the application!  
 
