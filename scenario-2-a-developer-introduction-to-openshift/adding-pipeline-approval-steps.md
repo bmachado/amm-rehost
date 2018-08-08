@@ -8,11 +8,11 @@ Open the monolith-pipeline configuration page in the Web Console \(you can navig
 
 * Pipeline Config page at
 
-https://master.\[EVENT-NAME\].openshiftworkshop.com/console/project/\[your-username\]-coolstore-prod/browse/pipelines/monolith-pipeline?tab=configuration
+[https://master.\[EVENT-NAME\].openshiftworkshop.com/console/project/\[your-username\]-coolstore-prod/browse/pipelines/monolith-pipeline?tab=configuration](https://master.[EVENT-NAME].openshiftworkshop.com/console/project/[your-username]-coolstore-prod/browse/pipelines/monolith-pipeline?tab=configuration)
 
 On this page you can see the pipeline definition. Click **Actions → Edit** to edit the pipeline:
 
-![Prod](../images/scenario2/image48.png)
+![Prod](https://lh4.googleusercontent.com/Osv5vmmxSKF-0PJFYKfkcM5oOq4q5VEU_PMBmrmqrYQFEGshoFGNB7tgres4S5tifV_0xcA8GPaa1ALA7M6o82_32ZlEFg40d_MS5agTEKcbiMq4OTDMvtZHjFH7J_T3r_jnIVv3)
 
 In the pipeline definition editor, add a new stage to the pipeline, just before the Deploy to PROD step:
 
@@ -25,9 +25,9 @@ stage 'Approve Go Live'
   }
 ```
 
- Your final pipeline should look like:
+Your final pipeline should look like:
 
-![Prod](../images/scenario2/image26.png)
+![Prod](https://lh4.googleusercontent.com/gG28eg-X7ufNirWzgH9Yirke_08Vp1aEWZTvliEHiQxg_M-zynKwC-NTjZ0hA6A7Or_EJJnwjtnZ4ZqMH3DSzvUHD1nSMrmDM1hAERdF27dPcMAZxlwtnC_2bZ9AjwPpXxvxUQdj)
 
 Click **Save.**
 
@@ -63,17 +63,17 @@ And verify that the original black header is visible in the dev application:
 
 * Coolstore - Dev at
 
-http://www-\[your-username\]-coolstore-dev.apps.\[EVENT-NAME\].openshiftworkshop.com
+[http://www-\[your-username\]-coolstore-dev.apps.\[EVENT-NAME\].openshiftworkshop.com](http://www-[your-username]-coolstore-dev.apps.[EVENT-NAME].openshiftworkshop.com)
 
-![Prod](../images/scenario2/image1.png)
+![Prod](https://lh6.googleusercontent.com/oDpdEQLygkM2-UDHk-Zo8drh0_vulzpAsUdS6MOQ_5RldOdMql8ZK8siguXwEgAxtfeUYtw-OdRki3eds-bo9ZCKFYTzyP7X-v0Cqr-gGSHDjXEBQ2bwiup_Iclw2kItNDrABBmA)
 
 While the production application is still blue:
 
 * Coolstore - Prod at
 
-http://www-\[your-username\]-coolstore-prod.apps.\[EVENT-NAME\].openshiftworkshop.com
+[http://www-\[your-username\]-coolstore-prod.apps.\[EVENT-NAME\].openshiftworkshop.com](http://www-[your-username]-coolstore-prod.apps.[EVENT-NAME].openshiftworkshop.com)
 
-![Prod](../images/scenario2/image2.png)
+![Prod](https://lh5.googleusercontent.com/2awgQALiJtiJj5LpaYmKH8GZpSdN75VSwooTvVrkdaFcuYp5W5tZWzlcwWJimmqH2r4OUktMdR4SmpLlJQ6IELzvWGGqMWMZPzNH0goY_LedACB7JtbG1WpXuaU1xKgx8gbCKX3k)
 
 We're happy with this change in dev, so let's promote the new change to prod, using the new approval step!
 
@@ -81,11 +81,11 @@ We're happy with this change in dev, so let's promote the new change to prod, us
 
 Invoke the pipeline once more by clicking Start Pipeline on the Pipeline Config page at
 
-https://master.\[EVENT-NAME\].openshiftworkshop.com/console/project/\[your-username\]-coolstore-prod/browse/pipelines/monolith-pipeline
+[https://master.\[EVENT-NAME\].openshiftworkshop.com/console/project/\[your-username\]-coolstore-prod/browse/pipelines/monolith-pipeline](https://master.[EVENT-NAME].openshiftworkshop.com/console/project/[your-username]-coolstore-prod/browse/pipelines/monolith-pipeline)
 
 The same pipeline progress will be shown, however before deploying to prod, you will see a prompt in the pipeline:
 
-![Prod](../images/scenario2/image13.png)
+![Prod](https://lh6.googleusercontent.com/XxtACo8u8cKjpaW6WHtwtH1s3GgJZ-eB9cu4b1pycVw8-6eB-xVfms-GrqOm1Qm10YvngemLxBJ85W-cYgozV7cQ1VOvlvxOifJhon6mstJ1txrtA8YhobcqR7lqOXYlN7t9Mebd)
 
 Click on the link for Input Required. This will open a new tab and direct you to Jenkins itself, where you can login with the same credentials as OpenShift:
 
@@ -94,7 +94,7 @@ Click on the link for Input Required. This will open a new tab and direct you to
 
 Accept the browser certificate warning and the Jenkins/OpenShift permissions, and then you'll find yourself at the approval prompt:
 
-![Prod](../images/scenario2/image9.png)
+![Prod](https://lh5.googleusercontent.com/WcPJZvQ8ZSrqUfzaKtiu7RgODjKYYFPiYDEjLTDk6Nf4nb0O6YU7_3olELH-aTW0cskUgrfYKCctbZ8kKbrMHmHTMh-5KXIbRkX0CMhctPSJJ0bpstd-54G1y3ItvBeYIEkeAv5U)
 
 ## 4. Approve the change to go live
 
@@ -112,7 +112,7 @@ Once it completes, verify that the production application has the new change \(o
 
 * Coolstore - Prod at
 
-http://www-\[your-username\]-coolstore-prod.apps.\[EVENT-NAME\].openshiftworkshop.com
+[http://www-\[your-username\]-coolstore-prod.apps.\[EVENT-NAME\].openshiftworkshop.com](http://www-[your-username]-coolstore-prod.apps.[EVENT-NAME].openshiftworkshop.com)
 
-![Prod](../images/scenario2/image1.png)
+![Prod](https://lh4.googleusercontent.com/W-OKqngxAUNVv-5bqWx78vHiNi3O7xfV1q7t4mvvGIseLbRkODb0TjkaR11ZuFqUdYyiEqeHQDydrg5ti_pyTmKyrwnYbQ2OOAz6SLsGUFikTsG-j9NuGx2hoGVJ1jHKH9lDA67S)
 

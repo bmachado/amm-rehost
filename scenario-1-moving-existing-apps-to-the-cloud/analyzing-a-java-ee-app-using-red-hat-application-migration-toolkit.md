@@ -4,7 +4,7 @@ For this scenario, we will use the CLI and Eclipse Plugin as you are the only on
 
 1. Verify Red Hat Application Migration Toolkit CLI
 
-   The RHAMT CLI is has been installed for you. To verify that the tool was properly installed, open a terminal window navigating on Application → System Tools → Terminal and run the following command:
+The RHAMT CLI is has been installed for you. To verify that the tool was properly installed, open a terminal window navigating on Application → System Tools → Terminal and run the following command:
 
 ```bash
 ${HOME}/rhamt-cli-4.0.1.Final/bin/rhamt-cli --version
@@ -23,7 +23,7 @@ This is a minimal Java EE project which uses [JAX-RS](https://docs.oracle.com/ja
 
 When you later deploy the application, it will look like:
 
-![CoolStore Monolith](../images/scenario1/image27.png)
+![CoolStore Monolith](https://lh5.googleusercontent.com/-QevysQ26TiDsqIApIDl3889ersyTCQb4WtPbOqCnkMPhvDzTV6uyxMyOdb_J9s1d37VTBcAzgRcPr4skpOpxGPhulB6uw8aFYpdDYLB2sZ18e8SLj0mh8_xHXMA3uZmEI1Vj7dG)
 
 The RHAMT CLI has a number of options to control how it runs. Click on the below command to execute the RHAMT CLI and analyze the existing project:
 
@@ -50,16 +50,11 @@ Wait for it to complete before continuing!. You should see Report created in:
 
 Next, open the following file `/home/developer/rhamt-reports/monolith/index.html` in your browser. You should see the landing page for the report:
 
-<<<<<<< HEAD
-
-=======
->>>>>>> bef8bc274541f80fb743b4f77f8a1aa38dd21586
-![Landing Page](../images/scenario1/image19.png)
+![Landing Page](https://lh5.googleusercontent.com/0CJojzmX8ynhPUnc9MlXo17q9NeXM7qFxEFmQGq5xSoUOI98bjO1vQF6BxR5vvQMfvMJX4I7UkspPVgF7QF2jIwRMkqWHvlaNSfaOZoUPoZYP2YtwfilNgWSNmOmdDfvLZTme2ZE)
 
 The main landing page of the report lists the applications that were processed. Each row contains a high-level overview of the story points, number of incidents, and technologies encountered in that application.Click on the **monolith** link to access details for the project:
 
-![Project Overview](../images/scenario1/image52.png)
+![Project Overview](https://lh6.googleusercontent.com/W83TxodJKLCkBR83zaj9iKbRQ9tFp6XrTQkE7z8sKZVg5S-eLOmpcUI7iV4ZWT7hgIm3riduYSphhvJfz5X3oFQWBgdPy_PenWpIM7_cJbSS8_YpFwXgyr6PlOJVGx0cgctSIpPr)
 
-Now that you have the RHAMT report available, let's get to work migrating the app!  
-
+Now that you have the RHAMT report available, let's get to work migrating the app!
 

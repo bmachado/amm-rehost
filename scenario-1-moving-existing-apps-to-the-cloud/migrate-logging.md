@@ -10,7 +10,7 @@ We will use the standard Java Logging framework, a much more portable framework.
 
 Open the offending file using Issue Explorer tab. Navigate until OrderServiceMDB and double-click in `NonCatalogLogger` issue. `src/main/java/com/redhat/coolstore/service/OrderServiceMDB.java`
 
-![](../images/scenario1/image13.png)
+![](https://lh3.googleusercontent.com/MdmGQG5X4wDc_2eAh62ugGxj6j_q1djQ_ToQT5L-YrWvXQYW52qETInPm5M7t70Ey58K_5bf-ktskKs0BwAptEP815dmbcFXUoy15g2Tr4mWZCKGybnYfaEGV_i4KVl7sW3hRooh)
 
 2. Make the changes
 
@@ -81,5 +81,5 @@ That one was pretty easy.
 
 Mark the issues related to this as fixed.
 
-![](../images/scenario1/image32.png)
+![](https://lh4.googleusercontent.com/Hto7CzZNLUVcS3ZXyt9hDhoKr7om50KXcbqOo6acWfHIxf1ycEw5EhrmxbFCYfGskTtFFRXuxzmz6qZ6JIb77pYSLvYLKuduUB_zZyv0JhU-8sdhoELCG_5zQi3EyoL5ZOB0Z6yt)
 

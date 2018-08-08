@@ -8,5 +8,5 @@ mvn wildfly:run
 
 Wait for the server to startup. You should see `Deployed "ROOT.war" (runtime-name: "ROOT.war")`
 
-![](../images/scenario1/image41.png)
+![](https://lh3.googleusercontent.com/04vQS8qV3wZ8lerEwo6piXsxK3IudGmqIhczTGpKOiA--ggHB9wE5lYmIL5Ap6kF9HIPxrR3kNmfLwMntWiZ3qwKuoao2vk8-pA_OJfwB0npIpCYqLVAzICAxLx4UHJSYYGVQYNW)
 
